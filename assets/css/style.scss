@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+
+
+body {
+    background-image: url(../img/fond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h1 {
+    font-family: 'Pirata One', cursive;
+    color: #442C24;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'Pirata One', cursive ;
+    color: #1B3562;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Pirata One', cursive ;
+    text-align: center;
+}
+
+.multiplier {
+    font-family:'Pirata One', cursive ;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #1B3562;;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #D6B69D;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    opacity: 0.5;
+    &.active {
+        opacity: 1;
+    }
+    &:hover {
+        filter: brightness(120%);
+    }
+}
+    
+img {
+    border-radius: 10px;
+    padding-bottom: 1vh;
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    
+    section {
+        min-width: 33%;
+        
+    }
+}
+
+.click {
+    background-color: rgba(77, 77, 77, 0.6);
+    border-radius: 5%;
+    padding-left: 1vh;
+}
+
+.bonus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(77, 77, 77, 0.6);
+    border-radius: 5%;
+    margin-left: 2vh;
+    // .imgBonus {
+    //     position: absolute;
+    //     img {
+    //         position: relative;
+    //     }
+    // }
+}
+
+.store {
+    background-color: rgba(77, 77, 77, 0.6);
+    border-radius: 5%;
+    margin-left: 2vh;
+}
+
+.clickSeeds {
+    img {
+        text-align: center;
+    }
+}
+
+.upgrades {
+    background-color :  rgb(189, 170, 87);
+    border-radius: 5%;
+}
+
+.viewGraine {
+    font-family: 'Pirata One', cursive ;
+    text-align: center;
+    color:  rgb(189, 170, 87);
+}
