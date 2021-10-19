@@ -14,12 +14,12 @@ let save = () => {
 
 /**
  * Determinate if the user can buy a certain ressource or not
- * @param {Number} amount
+ * @param {Number} quantity
  * @param {Number} cost
  * @return {Boolean}      
  */
-let buy = (amount, cost) => {
-    if (amount >= cost) {
+let buy = (quantity, price) => {
+    if (quantity >= price) {
         return true;
     } else {
         return false;
@@ -29,9 +29,8 @@ let buy = (amount, cost) => {
 /**
  * Determinate the user's ressource cost
  * @param {Number} amount
- * @param {Number} exp
  * @return {Number}      
  */
-let cost = (amount, exp) => {
-    return (Math.exp(amount + 1) ** exp);
+let cost = (amount) => {
+    return Math.ceil(Math.exp(amount + 1));
 }
