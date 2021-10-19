@@ -76,18 +76,16 @@ main {
 }
 
 .bonus {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: rgba(77, 77, 77, 0.6);
     border-radius: 5%;
     margin-left: 2vh;
-    // .imgBonus {
-    //     position: absolute;
-    //     img {
-    //         position: relative;
-    //     }
-    // }
+}
+
+.imgBonus {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .store {
@@ -105,10 +103,67 @@ main {
 .upgrades {
     background-color :  rgb(189, 170, 87);
     border-radius: 5%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .viewGraine {
     font-family: 'Pirata One', cursive ;
     text-align: center;
     color:  rgb(189, 170, 87);
+}
+
+.seeds {
+    display: block;
+    margin: 0 auto;
+}
+
+.prizeBag {
+    position: relative;
+    visibility: hidden;
+}
+.prizeSun {
+    position: relative;
+    visibility: hidden;
+}
+.prizeParrot {
+    position: relative;
+    visibility: hidden;
+}
+.prizeStatue {
+    position: relative;
+    visibility: hidden;
+}
+
+p {
+    font-family: 'Pirata One', cursive ;
+    text-align: center;
+}
+
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    flex: 1 0 250px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: #C3D6D6;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #C3D6D6;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #405554;
+    border-radius: 3px;
 }
