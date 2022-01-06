@@ -20,3 +20,7 @@ At the end of this challenge you should have improved your:
 - **JavaScript** skills
 - Team skills
 - Git conflict skills
+
+## Final project
+
+[Parrots Clicker](https://arnaudlosson.github.io/Clicker/)
