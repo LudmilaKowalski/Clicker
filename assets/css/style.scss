@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+
+
+body {
+    background-image: url(../img/fond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h1 {
+    font-family: 'Pirata One', cursive;
+    color: #442C24;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'Pirata One', cursive ;
+    color: #1B3562;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Pirata One', cursive ;
+    text-align: center;
+}
+
+.multiplier {
+    font-family:'Pirata One', cursive ;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #1B3562;;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #D6B69D;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    opacity: 0.5;
+    &.active {
+        opacity: 1;
+    }
+    &:hover {
+        filter: brightness(120%);
+    }
+}
+    
+img {
+    border-radius: 10px;
+    padding-bottom: 1vh;
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    
+    section {
+        min-width: 33%;
+        
+    }
+}
+
+.click {
+    background-color: rgba(77, 77, 77, 0.6);
+    border-radius: 5%;
+    padding-left: 1vh;
+}
+
+.bonus {
+    background-color: rgba(77, 77, 77, 0.6);
+    border-radius: 5%;
+    margin-left: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+//ajouter un position absolute dans les 3 div en dessous et créer une classe en dessous pour les images dynamiques avec un position relative 
+//(faudra peut être bidouiller mais ça devrait fonctionner)
+
+.sunField {
+    // position: absolute;
+    background-image: url(../img/fields.jpg);
+    width: 100%;
+    background-size: cover;
+}
+.pirateDeck {
+    // position : absolute;
+    background-image: url(../img/piratedeck.jpg);
+    width: 100%;
+    background-size: cover;
+}
+.temple {
+    // position : absolute;
+    background-image: url(../img/temple.jpg);
+    width: 100%;
+    background-size: cover;
+}
+.floweur {
+    height: 10px;
+    position: relative;
+}
+
+.store {
+    background-color: rgba(77, 77, 77, 0.6);
+    border-radius: 5%;
+    margin-left: 2vh;
+}
+
+.clickSeeds {
+    img {
+        text-align: center;
+    }
+}
+
+.upgrades {
+    background-color :  rgb(189, 170, 87);
+    border-radius: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.viewGraine {
+    font-family: 'Pirata One', cursive ;
+    text-align: center;
+    color:  rgb(189, 170, 87);
+}
+
+.seeds {
+    display: block;
+    margin: 0 auto;
+}
+
+.prizeBag {
+    position: relative;
+    visibility: hidden;
+}
+.prizeSun {
+    position: relative;
+    visibility: hidden;
+}
+.prizeParrot {
+    position: relative;
+    visibility: hidden;
+}
+.prizeStatue {
+    position: relative;
+    visibility: hidden;
+}
+
+p {
+    font-family: 'Pirata One', cursive ;
+    text-align: center;
+}
+
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+    
+}
+
+.carousel-item {
+    flex: 1 0 250px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(189, 170, 87);
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #C3D6D6;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(77, 77, 77, 0.6);
+    border-radius: 3px;
+}
+
+ul {
+    list-style-type: none;
+    }
+
+.seedBag {
+    margin-left: 12vh;
+}
+
+
+.sunflower {
+    margin-left: 12vh;
+}
+
+.pirate {
+    margin-left: 12vh;
+}
+
+.statue {
+    margin-left: 12vh;
+}
