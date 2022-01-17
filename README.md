@@ -21,6 +21,10 @@ At the end of this challenge you should have improved your:
 - Team skills
 - Git conflict skills
 
+## Screenshot from the clicker
+
+![Image](./assets/img/Click1.png)
+
 ## Final project
 
 [Parrots Clicker](https://arnaudlosson.github.io/Clicker/)
